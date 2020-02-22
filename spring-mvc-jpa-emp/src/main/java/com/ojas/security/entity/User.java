@@ -11,6 +11,7 @@ import org.springframework.security.core.GrantedAuthority;
 @Entity
 public class User extends org.springframework.security.core.userdetails.User {
 	
+	
 	@Id
 	private Integer uid;
 	

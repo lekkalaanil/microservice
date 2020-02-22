@@ -14,6 +14,7 @@ public class OjasSecurity extends WebSecurityConfigurerAdapter{
 	@Autowired
 	UserDetailsService userDetailsService;
 	
+	
 	@Bean
 	AuthenticationProvider authntication()
 	{

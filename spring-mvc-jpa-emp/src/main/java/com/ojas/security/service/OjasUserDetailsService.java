@@ -10,7 +10,6 @@ import com.ojas.security.entity.User;
 
 public class OjasUserDetailsService implements UserDetailsService {
 	
-	
 	@Autowired
 	UserRepository repository;
 	
