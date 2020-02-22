@@ -4,6 +4,7 @@ import java.util.Collection;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.OneToOne;
 
 import org.springframework.security.core.GrantedAuthority;
 
@@ -12,6 +13,9 @@ public class User extends org.springframework.security.core.userdetails.User {
 	
 	@Id
 	private Integer uid;
+	
+	@OneToOne
+	Collection<? extends GrantedAuthority> authorities;
 	
 	public User(String username, String password, boolean enabled, boolean accountNonExpired,
 			boolean credentialsNonExpired, boolean accountNonLocked,
